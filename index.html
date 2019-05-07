@@ -9,8 +9,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.2/marked.min.js"></script>
   </head>
   <body>
-    <textarea name="editor" id="editor" cols="30" rows="10"> </textarea>
-    <textarea name="preview" id="preview" cols="30" rows="10"></textarea>
+    <div class="container-fluid">
+      <div>
+        <h1 id="editor-h1">Editor</h1>
+        <textarea id="editor" placeholder="editor">
+  <!-- prettier-ignore -->
+# Marked - Markdown Parser 
+[Marked] lets you convert [Markdown] into HTML.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you   like and see how it gets converted.  Live.  No more waiting around.
+          
+
+## Images
+
+If you want to embed images, this is how you do it:
+
+![Image of cat](https://i.pinimg.com/736x/b6/10/89/b610894b9144cd9da3efc6c44711dfb7.jpg)
+
+## Inline Code
+I think you should use an `<div>` element here instead. 
+   
+## Code Block
+  
+Indent every line of the block by at least four spaces or one tab.
+  
+      <html>
+        <head>
+        </head>
+      </html>
+  
+
+That's it.  Pretty simple!
+          
+## Why Markdown?
+          
+It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator  of[markdown] says,
+          
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable
+> as possible. The idea is that a
+> Markdown-formatted document 
+- **should be:**   publishable as-is, as plain text 
+- **without looking:**  like it's been marked up with tags or formatting instructions
+
+[Marked]: https://github.com/markedjs/marked/
+[Markdown]: http://daringfireball.net/projects/markdown/
+      </textarea
+        >
+      </div>
+      <div>
+        <h1 id="preview-h1">Preview</h1>
+        <div id="preview"></div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
